@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Taller practico</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/pollo.css" />
+    <link rel="stylesheet" href="../../style-menu-general.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="tittleH1">Pollo Don Bosco - elige tu orden</h1>
+    <form action="javascript:void(0);" class="demoForm" id="polloForm">
+        <fieldset>
+        <p class="tittleP">Combo: </p>
+            <p class="extras">
+                <label><input type="radio" name="combo" value="7.25" checked="checked"/>Super combo</label>
+                <label><input type="radio" name="combo" value="5.75" />Combo personal</label>
+                <label><input type="radio" name="combo" value="3.50 " />Combo infantil</label>
+                <input type="hidden" name="sz_tot" value="0.00" />
+            </p>
+            <p class="tittleP">Cantidad: <input class="inp1" type="number" min="1"></p>
+        </fieldset>
+        <br><h2>Agrega mas sabor a tu combo</h2><br>
+        <fieldset>
+            <br>
+            <p id="extras" class="extras"><label class="tittleP">Adicionales:</label><br><br>
+                <label class="lblExtra"><input type="checkbox" name="ensalada" value="1.50" />Ensalada </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="papas" value="1.25" />Papa frita </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="polloG" value="1.75" />Pieza de pollo grande </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="polloM" value="1.50" />Pieza de pollo mediana </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="polloP" value="1.25" />Pieza de pollo pequeña </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="bebidaG" value="1.50" />Bebida grande </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="bebidaM" value="1.25" />Bebida mediana </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="bebidaP" value="1.00" />Bebida pequeña </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="cafe" value="0.50" />Cafe </label><input class="inp1" type="number" min="1"><br>
+                <label class="lblExtra"><input type="checkbox" name="postre" value="1.25" />Postre </label></label><input class="inp1" type="number" min="1">
+                <input  type="hidden" name="tops_tot" value="0.00" />
+            </p><br>
+        </fieldset>
+            <label class="tittleP">
+                Sub total: $ <input class="inp1" type="text" name="subtotal" class="num" value="0.00" readonly="readonly" />
+                Total: $ <input class="inp1" type="text" name="total" class="num" value="0.00" readonly="readonly" />
+            </label>
+        </p>
+            <p>
+                <input type="submit" name="submit" class="btnCompra" value="Comprar" />
+                <input type="submit" name="nOrden" class="btnCompra" value="Nueva orden" />
+            </p>
+        
+    </form>
+</div>
+    <script src="js/pollo2.js"></script>
+    <div class="main_content">
+      
+        <div class="first">
+        <p>
+    
+        <h2 class="tittleH1">Deja tu comentario!</h2>
+        </p>
+        </div>
+        
+        <div class="two">
+        
+        
+        <button class="btnCompra" onclick="textareaFunction()">Comentario</button>
+        
+        <button class="btnCompra" onclick="resetElements()">Restablecer</button>
+        </div>
+    
+        <div class="three">
+            <form action="#" id="mainform" method="get" name="mainform">
+            <span id="myForm"></span>
+            <p></p>
+            </form>
+            </div>
+            </div> 
+            <script src="js/comentarios.js"></script>
+</body>
+
+</html>
